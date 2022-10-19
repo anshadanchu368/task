@@ -87,7 +87,7 @@ const uploads = multer({
 }).single("testImage");
 
 app.get("/",function(req, res){
-  res.send(uploads);
+  res.send(Task);
 })
 
 app.get("/create_new_storage", (req, res) => {
